@@ -12,8 +12,23 @@ $(call inherit-product, device/google/coral/aosp_coral.mk)
 
 include device/google/coral/coral/device-lineage.mk
 
+# Pixel Flags
+TARGET_IS_PIXEL := true
+TARGET_PIXEL_STAND_SUPPORTED := true
+
+# GApps Flag
+WITH_GAPPS := true
+
+# Matrixx
+MATRIXX_MAINTAINER := Zahid_Choudhry
+MATRIXX_CHIPSET := SM8150
+MATRIXX_BATTERY := 3700mah
+MATRIXX_DISPLAY := 1440x3040
+
 # Device identifier. This must come after all inclusions
+PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
+PRODUCT_DEVICE := coral
 PRODUCT_MODEL := Pixel 4 XL
 PRODUCT_NAME := lineage_coral
 

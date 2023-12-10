@@ -40,4 +40,5 @@ BOARD_SEPOLICY_DIRS += device/google/coral/sepolicy-lineage/vendor
 # Verified Boot
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
+# Override Artifect Check 
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
